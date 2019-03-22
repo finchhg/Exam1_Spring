@@ -115,9 +115,17 @@ def test_problem2():
 
 def problem3(string_of_characters):
 
+    totalN = 0
+    totalL = 0
+
     for k in range(len(string_of_characters)):
-        string_of_characters[k].isnumeric()
-        return string_of_characters
+        if string_of_characters[k].isalnum():
+            totalN = totalL + 1
+        return totalN
+
+        if string_of_characters[k].isalpha():
+            totalL = totalL + 1
+        return totalL
 
     #I have no clue how to do this!
     """
