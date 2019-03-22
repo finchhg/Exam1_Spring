@@ -115,7 +115,11 @@ def test_problem2():
 
 def problem3(string_of_characters):
 
-    string_of_characters[].isalnum()
+    for k in range(len(string_of_characters)):
+        string_of_characters[k].isnumeric()
+        return string_of_characters
+
+    #i have no clue how to do this
     """
     What comes in:
           -- a string of characters that contains letters of the alphabet and/or numbers
