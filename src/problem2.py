@@ -8,13 +8,14 @@ difficult elements as time permits.
 Every student should be able to print the string and the
 length of the string.  If you don't remember how, LOOK at
 your programming sessions!!!   
-PUT YOUR NAME HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+Harrison Finch.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
     """ Calls the   TEST   functions in this module. """
     test_problem2()
+    reverseString('abc')
 
 
 def reverseString(string):
@@ -31,6 +32,7 @@ def reverseString(string):
     Remember, do NOT give your function the same name.
     """
     string = string[::-1]
+    print(string)
     return string
 
 
@@ -59,11 +61,61 @@ def test_problem2():
     print('Test case 1 Actual: ')
     problem3(string_of_characters)
     print('*********************************************')
-    # TODO: 2. Write at least three reasonable test cases below.
+    # done: 2. Write at least three reasonable test cases below.
     #         Three excellent test cases are worth 10 points
+
+    print('*********************************************')
+    print('Test case 2 Expected: ')
+    print('*********************************************')
+    string_of_characters = 'Harrison'
+    print('String entered: ', string_of_characters)
+    print('Length of string: ', 8)
+    print('Number of alphabetic characters: ', 8)
+    print('Number of digits: ', 0)
+    print('Reversed string is: nosirraH')
+    print('The user entered a normal string')
+    print()
+    print('*********************************************')
+    print('Test case 2 Actual: ')
+    problem3(string_of_characters)
+    print('*********************************************')
+
+    print('*********************************************')
+    print('Test case 3 Expected: ')
+    print('*********************************************')
+    string_of_characters = 'Finch'
+    print('String entered: ', string_of_characters)
+    print('Length of string: ', 5)
+    print('Number of alphabetic characters: ', 5)
+    print('Number of digits: ', 0)
+    print('Reversed string is: hcniF')
+    print('The user entered a normal string')
+    print()
+    print('*********************************************')
+    print('Test case 3 Actual: ')
+    problem3(string_of_characters)
+    print('*********************************************')
+
+    print('*********************************************')
+    print('Test case 4 Expected: ')
+    print('*********************************************')
+    string_of_characters = 'Rose-Hulman 2022'
+    print('String entered: ', string_of_characters)
+    print('Length of string: ', 14)
+    print('Number of alphabetic characters: ',10)
+    print('Number of digits: ', 4)
+    print('Reversed string is: 2202 namluH-esoR')
+    print('The user entered a normal string')
+    print()
+    print('*********************************************')
+    print('Test case 4 Actual: ')
+    problem3(string_of_characters)
+    print('*********************************************')
 
 
 def problem3(string_of_characters):
+
+    string_of_characters[].isalnum()
     """
     What comes in:
           -- a string of characters that contains letters of the alphabet and/or numbers
@@ -131,6 +183,8 @@ def problem3(string_of_characters):
 # If this module is running at the top level (as opposed to being
 # imported by another module), then call the 'main' function.
 # -----------------------------------------------------------------------
+
+
 
 
 if __name__ == '__main__':
